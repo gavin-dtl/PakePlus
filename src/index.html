@@ -1,22 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus App</title>
-        <script type="module" src="/main.js" defer></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="芋道管理系统 基于 vue3 + CompositionAPI + typescript + vite3 + element plus 的后台开源免费管理系统！"
+    />
+    <meta
+      name="description"
+      content="芋道管理系统 基于 vue3 + CompositionAPI + typescript + vite3 + element plus 的后台开源免费管理系统！"
+    />
+    <title>融媒体管理平台</title>
+    <script type="module" crossorigin src="/assets/index-DzCoMBOl.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BCo0o63-.css">
+  </head>
+  <body>
+    <div id="app">
+      <style>
+        .app-loading {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: #f0f2f5;
+        }
 
-    <body>
-        <main class="container">
-            <h1>Welcome to PakePlus</h1>
+        .app-loading .app-loading-wrap {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          display: flex;
+          -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
 
-            <form class="row" id="greet-form">
-                <input id="greet-input" placeholder="Enter a name..." />
-                <button type="submit">Greet</button>
-            </form>
-            <p id="greet-msg"></p>
-        </main>
-    </body>
+        .app-loading .app-loading-title {
+          margin-bottom: 1.875rem;
+          font-size: 1.25rem;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .app-loading .app-loading-logo {
+          width: 6.25rem;
+          margin: 0 auto 0.9375rem auto;
+        }
+
+        .app-loading .app-loading-item {
+          position: relative;
+          display: inline-block;
+          width: 3.75rem;
+          height: 3.75rem;
+          vertical-align: middle;
+          border-radius: 50%;
+        }
+
+        .app-loading .app-loading-outter {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border: 0.25rem solid #2d8cf0;
+          border-bottom: 0;
+          border-left-color: transparent;
+          border-radius: 50%;
+          animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+        }
+
+        .app-loading .app-loading-inner {
+          position: absolute;
+          top: calc(50% - 1.25rem);
+          left: calc(50% - 1.25rem);
+          width: 2.5rem;
+          height: 2.5rem;
+          border: 0.25rem solid #87bdff;
+          border-right: 0;
+          border-top-color: transparent;
+          border-radius: 50%;
+          animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+        }
+
+        @-webkit-keyframes loader-outter {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes loader-outter {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+
+        @-webkit-keyframes loader-inner {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+          }
+        }
+
+        @keyframes loader-inner {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+
+          100% {
+            -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+          }
+        }
+      </style>
+      <div class="app-loading">
+        <div class="app-loading-wrap">
+          <div class="app-loading-title">
+            <img src="/logo.gif" class="app-loading-logo" alt="Logo" />
+<!--            <div class="app-loading-title">融媒体管理平台</div>-->
+          </div>
+          <div class="app-loading-item">
+            <div class="app-loading-outter"></div>
+            <div class="app-loading-inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
