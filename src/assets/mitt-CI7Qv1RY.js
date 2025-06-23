@@ -1,0 +1,1 @@
+const o={all:t=t||new Map,on:function(i,e){var n=t.get(i);n?n.push(e):t.set(i,[e])},off:function(i,e){var n=t.get(i);n&&(e?n.splice(n.indexOf(e)>>>0,1):t.set(i,[]))},emit:function(i,e){var n=t.get(i);n&&n.slice().map(function(c){c(e)}),(n=t.get("*"))&&n.slice().map(function(c){c(i,e)})}};var t;export{o as e};
